@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Todo List</title>
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body>
+<%- include('partials/header') %>
+
         <div class="box">
             <h1>Todo List</h1>
         </div>
@@ -20,10 +15,17 @@
             <% }) %>
 
 
-            <form action="/" method="post">
+            <form action="/list" method="post">
                 <input type="text" name="ele1" placeholder="Enter the task">
                 <button type="submit">+</button>
             </form>
+            
         </div>
-    </body>
-</html>
+        <div class="logout-box">
+            <form action="/logout" method="post">
+                <button type="submit">Logout</button>
+            </form>
+        </div>
+        
+        
+<%- include('partials/footer') %>

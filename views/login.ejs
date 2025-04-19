@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+
+        <div class="box">
+            <h1>Login - Todo List</h1>
+        </div>
+       
+        <div class="login-box box">
+            <form action="/login" method="post">
+              <label>Email</label>
+              <input type="email" name="username" required>
+        
+              <label>Password</label>
+              <input type="password" name="password" required>
+        
+              <button type="submit">Login</button>
+            </form>
+        </div>
+        
+        
+<%- include('partials/footer') %>
